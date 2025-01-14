@@ -1,0 +1,483 @@
+html,body{
+    overflow-x: hidden;
+}
+.container{
+    background: #0D081A;
+    height: 100vh;
+    width: 100vw;
+    overflow-x:hidden;
+}
+.nav-parent{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    /* justify-content: space-around; */
+   
+}
+
+.nav-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    width: 30%;
+    height: 100%;
+    /* border: 2px solid red; */
+    font-size: 30px;
+    color: white;
+
+}
+.flex-more-nav{
+    display:none;
+}
+.nav-logo i{
+    /* width: 100%;
+    height: 100%; */
+    font-size: 50px;
+    color: aquamarine;
+}
+.nav-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 50%;
+    height: 100%;
+    color: aliceblue;
+}
+.nav-menu :hover{
+    cursor: pointer;
+    color: #2fee8f;
+    text-decoration: underline;
+}
+.nav-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 100%;
+    /* border: 2px solid red; */
+}
+.nav-button button{
+    width: 40%;
+    height:50%;
+    background: #2fee8f;
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+
+.head-text-parent{
+   
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    /* background: rgb(188, 95, 95); */
+}
+
+.head-text {
+    display: flex;
+    align-items: center;
+    padding-left: 10vw;
+}
+
+.head-text p{
+font-family: "Mona Sans", serif;
+color: silver;
+font-size: 80px;
+line-height: 80px;
+}
+.head-text p span{
+    color: white;
+font-size: 100px;
+
+}
+
+.trio-parent{
+   
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.trio-1{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.trio-1-text{
+    padding-left: 100px;
+    width: 100%;
+    height: 70%;
+    /* border: 5px solid white; */
+    
+    
+}
+.trio-1-text p{
+    padding: 5% 10%;
+    color: aliceblue;
+    text-align: left;
+    font-size: 20px;
+}
+
+.btn-parent{
+    background: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 7px;
+    width: 40%;
+    height: 15%;
+    margin-left: 10%;
+    
+}
+
+.btn-parent button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background:#2fee8f;
+    width: 80%;
+    height: 95%;
+    border-radius: 7px;
+    cursor: pointer;
+
+    
+}
+.trio-1-awardmark{
+    display: flex;
+    height: 30%;
+    width: 100%;
+    /* border: 5px solid white; */
+    align-items: center;
+}
+
+.trio-1-awardmark img{
+    height: 40%;
+    width: 80px;
+    display: flex; 
+    margin-left: 10vw;
+    
+}
+.trio-1-awardmark h4{
+    color: white;
+    margin: 0 10px;
+}
+
+.trio-2{
+    position: relative;
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+}
+.grad-box{
+    border-top-left-radius: 20%;
+    border-top-right-radius: 20%;
+    width: 80%;
+    height: 80%;
+    background:linear-gradient(180deg,#1AC56E,#144941,#08031b);
+
+}
+.trio-2 img{
+position: absolute;
+height: 100%;
+width: 100%;
+}
+
+.trio-3{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.trio-3-text{
+    color: white;
+    font-size: 25px;
+    height: 70%;
+    width: 100%;   
+    padding-left: 40%;
+}
+.trio-logo{
+    width: 100%;
+    height: 30%;
+   
+    display: flex;
+
+}
+.trio-pic{
+    width: 50%;
+    height: 100%;
+ 
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+.trio-text{
+    
+    width: 50%;
+    height: 100%;
+    display: flex;
+   align-items: center;
+   color: white;
+
+}
+
+.trio-text span{
+    font-size: 40px;
+}
+.trio-pic img{
+    margin-left: 50%;
+    height: 50px;
+    width: 50%;
+    border-radius: 50%;
+    border: ridge;
+
+}
+.img1{
+   
+   
+    position: absolute;
+    z-index: 1;
+    margin-right:25%;
+    
+
+}
+.img2{
+   
+    position: absolute;
+    z-index: 2;
+    margin-right:18%;
+
+}
+.img3{
+   
+    position: absolute;
+    z-index: 3;
+    margin-right: 11%;
+
+}
+
+
+
+
+/* 
+Responsive css */
+
+@media (max-width : 640px){
+
+    .container{
+        height: 100%;
+        width: 100%;
+    }
+    .nav-parent{
+        width: 100%;
+        height: 10vh;
+        display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            border-bottom: 2px solid white;
+    }
+
+    .nav-menu{
+        display: none;
+    }
+    .nav-button{
+        display: none;
+    }
+    .nav-logo{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 50%;
+        height: 100%;
+        font-size: 20px;
+        color: white;
+    }
+    .flex-more-nav {
+        display: flex;
+        width: 50%;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+
+    .head-text-parent{
+   
+        height: 20vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+    }
+    
+    .head-text p{
+    color: silver;
+    font-size: 35px;
+    line-height: 40px;
+    }
+    .head-text p span{
+        color: white;
+    font-size: 60px;
+    }
+
+    .trio-parent{
+        height: 70vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .trio-1{
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .trio-1-text{
+        padding-left: 10px;
+        width: 100%;
+        height: 70%;
+    }
+    .trio-1-text p{
+        
+        color: rgb(10, 98, 175);
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .btn-parent{
+        background: white;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        border-radius: 7px;
+        width: 60%;
+        height: 40%;
+        margin-left: 10%;
+        
+    }
+    
+    .btn-parent button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background:mediumseagreen;
+        width: 80%;
+        height: 95%;
+        border-radius: 7px;
+        cursor: pointer;
+        
+        
+    }
+    .trio-1-awardmark{
+        display: none;
+    }
+    
+    .trio-1-awardmark img{
+       display: none;
+        
+    }
+    .trio-1-awardmark h4{
+       display: none;
+    }
+    
+    .trio-2{
+        display: none;
+    }
+    
+    .trio-3{
+        width: 100%;
+        height: 140%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .trio-3-text{
+        color: white;
+        font-size: 35px;
+        height: 100%;
+        width: 100%;   
+        margin: 20px 10px;
+    }
+    .trio-logo{
+        width: 100%;
+        height: 20%;
+       
+        display: flex;
+    
+    }
+    .trio-pic{
+        width: 50%;
+        height: 100%;
+     
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: flex-end;
+    
+    }
+    .trio-text{
+        
+        width: 50%;
+        height: 100%;
+        display: flex;
+       align-items: center;
+       color: white;
+    
+    }
+    
+    .trio-text span{
+        font-size: 40px;
+    }
+    .trio-pic img{
+        margin-left: 50%;
+        height: 50px;
+        width: 50%;
+        border-radius: 50%;
+        border: ridge;
+    
+    }
+    .img1{
+       
+       
+        position: absolute;
+        z-index: 1;
+        margin-right:25%;
+        
+    
+    }
+    .img2{
+       
+        position: absolute;
+        z-index: 2;
+        margin-right:18%;
+    
+    }
+    .img3{
+       
+        position: absolute;
+        z-index: 3;
+        margin-right: 11%;
+    
+    }
+    
+    
+}
