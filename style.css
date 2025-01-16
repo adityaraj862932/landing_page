@@ -11,6 +11,7 @@ html,body{
     height: 10vh;
     width: 100%;
     display: flex;
+    
     /* justify-content: space-around; */
    
 }
@@ -44,6 +45,8 @@ html,body{
     width: 50%;
     height: 100%;
     color: aliceblue;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 .nav-menu :hover{
     cursor: pointer;
@@ -67,8 +70,7 @@ html,body{
     
 }
 
-.head-text-parent{
-   
+.head-text-parent{ 
     height: 30vh;
     width: 100%;
     display: flex;
@@ -80,6 +82,9 @@ html,body{
     display: flex;
     align-items: center;
     padding-left: 10vw;
+    flex-wrap: wrap;
+    overflow-y:hidden;
+    overflow-x: hidden;
 }
 
 .head-text p{
@@ -271,6 +276,9 @@ width: 100%;
     margin-right: 11%;
 
 }
+.nav_menu_flex , .nav_menu_flex h3{
+    display: none;
+}
 
 
 
@@ -307,11 +315,13 @@ Responsive css */
         height: 100%;
         font-size: 20px;
         color: white;
+        padding-left: 20px;
     }
     .flex-more-nav {
         display: flex;
         width: 50%;
-        justify-content: center;
+        padding-right: 20px;
+        justify-content: flex-end;
         cursor: pointer;
     }
 
@@ -409,7 +419,7 @@ Responsive css */
         justify-content: center;
         align-items: center;
         flex-direction: column;
-    }
+        padding-bottom: 40px;   }
     .trio-3-text{
         color: white;
         font-size: 35px;
@@ -479,5 +489,30 @@ Responsive css */
     
     }
     
-    
+.nav_menu_flex{
+    background:#0a8b60;
+    height: auto;
+    width: 95vw;
+    display: none;
+   margin-left:0;
+   z-index: 1;
+    position: absolute;
+    overflow-x: hidden;
+
+}
+.nav_menu_flex h3{
+    padding:10px 0 10px 30px;
+    display: flex;
+    justify-content: flex-start;
+    text-align: left;
+    color: rgb(250, 247, 247);
+
+    cursor: pointer;
+    margin: -1px;
+}
+.nav_menu_flex h3:hover{
+    background: rgb(13, 251, 184);
+    color: black;
+   
+}
 }
