@@ -83,8 +83,6 @@ html,body{
     align-items: center;
     padding-left: 10vw;
     flex-wrap: wrap;
-    overflow-y:hidden;
-    overflow-x: hidden;
 }
 
 .head-text p{
@@ -169,6 +167,7 @@ font-size: 100px;
     width: 80px;
     display: flex; 
     margin-left: 10vw;
+    mix-blend-mode:normal;
     
 }
 .trio-1-awardmark h4{
@@ -347,14 +346,14 @@ Responsive css */
     }
 
     .trio-parent{
-        height: 70vh;
+        height: 100%;
         width: 100%;
         display: flex;
         flex-direction: column;
     }
     .trio-1{
         width: 100%;
-        height: 80vh;
+        height: 35vh;
         display: flex;
         flex-direction: column;
     }
@@ -409,17 +408,35 @@ Responsive css */
     }
     
     .trio-2{
-        display: none;
+        display:flex;
+        height: 50vh;
+        width: 100%;
+       
+      
+    }
+    .grad-box{
+        border-top-left-radius: 20%;
+        border-top-right-radius: 20%;
+        width: 80%;
+        height: 80%;
+        background:linear-gradient(180deg,#1AC56E,#144941,#08031b);
+    
+    }
+    .trio-2 img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
     }
     
     .trio-3{
         width: 100%;
-        height: 140%;
+        height: 50vh;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        padding-bottom: 40px;   }
+      
+      }
     .trio-3-text{
         color: white;
         font-size: 35px;
@@ -429,9 +446,10 @@ Responsive css */
     }
     .trio-logo{
         width: 100%;
-        height: 20%;
-       
+        height: 20vh;
         display: flex;
+        padding-bottom: 30px;
+        padding-top: 10px;
     
     }
     .trio-pic{
@@ -453,6 +471,7 @@ Responsive css */
        color: white;
     
     }
+    
     
     .trio-text span{
         font-size: 40px;
